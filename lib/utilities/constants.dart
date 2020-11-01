@@ -22,3 +22,13 @@ final kBoxDecorationStyle = BoxDecoration(
     ),
   ],
 );
+
+// Colors that we use in our app
+const kPrimaryColor = Color(0xFF0C9869);
+const kTextColor = Color(0xFF3C4046);
+const kBackgroundColor = Color(0xFFF9F8FD);
+
+const double kDefaultPadding = 20.0;
+
+final Color themeColor = Color(0xff063D3F);
+final Color colorWhite = Color(0xfff6f6f6);

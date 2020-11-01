@@ -1,6 +1,7 @@
+import 'package:app/Screens/home.dart';
 import 'package:app/Screens/signin.dart';
 import 'package:app/utilities/constants.dart';
-import 'package:firebase_analytics/firebase_analytics.dart';
+// import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -13,6 +14,7 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   String email, password;
   final database=FirebaseDatabase.instance.reference();
+  
   Widget _buildEmailTF() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -84,15 +86,15 @@ Future<Null> loginserve() async {
     var data = database.child("user");
     await data.child(email).once().then((DataSnapshot snapshot){
       print('Data ======>${snapshot.value}');
-      // if('${snapshot.value}' == 'null'){
-      //   print('user');
-      // }
-      // else if(password == '${snapshot.value['password']}'){
-      //   MaterialPageRoute route = MaterialPageRoute(builder: (context) => Home(),);
-      //   Navigator.pushAndRemoveUntil(context, route, (route) => false);
-      //   }else{
-      //   print('รหัสไม่ถูก');
-      //   }
+      if('${snapshot.value}' == 'null'){
+        print('user');
+      }
+      else if(password == '${snapshot.value['password']}'){
+        MaterialPageRoute route = MaterialPageRoute(builder: (context) => Home(),);
+        Navigator.pushAndRemoveUntil(context, route, (route) => false);
+        }else{
+        print('รหัสไม่ถูก');
+        }
 
 
     });
