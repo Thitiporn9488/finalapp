@@ -100,12 +100,12 @@ class _SigninState extends State<Signin> {
                 Icons.account_box,
                 color: Colors.black,
               ),
-              labelStyle: TextStyle(color: Colors.white),
+              labelStyle: TextStyle(color: Colors.black),
               labelText: 'Username',
               enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.black)),
               focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white))),
+                  borderSide: BorderSide(color: Colors.black))),
         ),
       );
 
@@ -116,14 +116,14 @@ class _SigninState extends State<Signin> {
           decoration: InputDecoration(
               prefixIcon: Icon(
                 Icons.account_box,
-                color: Colors.white,
+                color: Colors.black,
               ),
-              labelStyle: TextStyle(color: Colors.white),
+              labelStyle: TextStyle(color: Colors.black),
               labelText: 'Name',
               enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.black)),
               focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white))),
+                  borderSide: BorderSide(color: Colors.black))),
         ),
       );
 
@@ -133,13 +133,13 @@ class _SigninState extends State<Signin> {
           onChanged: (value) => password = value.trim(),
           obscureText: true,
           decoration: InputDecoration(
-              prefixIcon: Icon(Icons.lock, color: Colors.white),
-              labelStyle: TextStyle(color: Colors.white),
+              prefixIcon: Icon(Icons.lock, color: Colors.black),
+              labelStyle: TextStyle(color: Colors.black),
               labelText: 'Password',
               enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.black)),
               focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white))),
+                  borderSide: BorderSide(color: Colors.black))),
         ),
       );
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+// import 'package:flutter_svg/svg.dart';
 import 'package:app/Screens/body.dart';
 
 class Home extends StatefulWidget {
@@ -20,10 +20,10 @@ class _HomeState extends State<Home> {
   AppBar buildAppBar() {
     return AppBar(
       elevation: 0,
-      leading: IconButton(
-        icon: SvgPicture.asset("icons/menu.svg"),
-        onPressed: () {},
-      ),
+      // leading: IconButton(
+      //   icon: Icon(Icons.ac_unit),
+      //   onPressed: () {},
+      // ),
     );
   }
 }
