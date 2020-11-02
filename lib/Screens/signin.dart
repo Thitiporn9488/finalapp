@@ -51,7 +51,7 @@ class _SigninState extends State<Signin> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text(
-                        'My Tree',
+                        'Sign In',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 30.0,

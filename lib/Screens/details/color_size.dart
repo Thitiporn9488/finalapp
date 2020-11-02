@@ -23,7 +23,7 @@ class ColorAndSize extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white),
+                    color: Colors.black),
               ),
               SizedBox(height: 50 / 2),
               Text(

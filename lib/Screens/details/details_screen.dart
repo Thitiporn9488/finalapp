@@ -41,9 +41,9 @@ class DetailsScreen extends StatelessWidget {
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        Colors.green,
-                        Colors.green[200],
-                        Colors.green[100],
+                        Colors.green[50],
+                        Colors.green[50],
+                        Colors.green[50],
                         Colors.green[50],
                       ],
                       stops: [0.2, 0.5, 0.6, 0.8],
